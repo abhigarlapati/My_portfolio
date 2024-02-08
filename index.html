@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ebd877395e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="images/logo.png" class="logo"> -->
+                <div class="header">
+                    <h1>WELCOME !</h1>
+                </div>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>My Portfolio</p>
+                <h1>Hi, I'm<span> GARLAPATI CHANDRA KARTHIKEYA ABHI</span><br></h1>
+            </div>
+        </div>
+    </div>
+  <!------------About----------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/abhi1.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="subtittle">About Me</h1>
+                    &nbsp;
+                    <p><ul>
+                       
+                        <p>Hello! I'm Garlapati Chandra Karthikeya Abhi, a passionate aspiring developer eager to contribute to a reputed company in the tech industry. I recently graduated from KL University, where I honed my skills and laid the foundation for my career journey.</p>
+
+                        &nbsp;
+                        <h1>Skills & Expertise:</h1>&nbsp;
+                        <p>My programming toolbox includes proficiency in C, Java, Python, and SQL. I specialize in Java Full Stack Development, with hands-on experience using Spring Boot and MySQL for backend development. I thrive in the backend section of web development, where I enjoy bringing functionality and efficiency to digital solutions</p>
+
+                        &nbsp;
+
+                        <h1>Certifications:</h1>&nbsp;
+                        <p>I am proud to hold certifications in AWS Certified Practitioner and Red Hat Enterprise Application Development. Additionally, I've earned recognition for my Java skills through HackerRank's Java Basic certification.</p>
+
+                        &nbsp;
+
+                        <h1>Passion & Approach:</h1>&nbsp;
+                        <p>I am deeply passionate about continuous learning and growth. I approach every opportunity with flexibility and a collaborative mindset, eager to soak in knowledge and contribute to team success.</p>
+
+                        &nbsp;
+
+                        <h1>Future Goals:</h1>&nbsp;
+                        <p>My aim is to become a proficient developer in a reputed company, where I can leverage my skills to tackle challenging projects and make meaningful contributions to innovative solutions.</p>
+
+                        &nbsp;
+
+                        <h1>Education</h1>&nbsp;
+                        <li><span>2025</span><br>B-TECH from K L Deemed To Be University , Now I am currently persuing my btech 3rd year with 9.6 cgpa</li>
+
+                        &nbsp;
+                            <li><span>2021</span><br>Intermediate from Sri nidhi College with 920 marks</li>
+                            &nbsp;
+                            <li><span>2019</span><br>School from Sri chaitanya with 9.8 cgpa</li>
+
+                            &nbsp;
+
+
+                        <p>Thank you for taking the time to learn about me. I look forward to connecting and exploring potential opportunities together.</p>
+                    </ul></p>
+                    
+                    
+                   
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--------services---------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="subtittle">Projects</h1>
+            <div class="services-list">
+                <div class="service" id="web-design-service">
+                    <i class="fa-brands fa-free-code-camp"></i>
+                    <h2>TO-DO LIST</h2>
+                    <p class="service-description">
+                       <p> Implemented CRUD functionality, user authentication, and responsive design. </p>
+
+                        <p>Demonstrated proficiency in full-stack development and database management.</p>
+                        
+                        &nbsp;&nbsp;&nbsp;
+                        <p>
+                         • FRAMEWORK-JavaSpringboot
+                         </p>
+                         &nbsp;
+                         <p>
+                         • TOOL-VScode,mySQLworkbench
+                        </p>
+                    </p>
+                </div>
+                <div class="service" id="ui-ux-design-service">
+                    <i class="fa-brands fa-free-code-camp"></i>
+                    <h2>STUDENT COURSE MANAGEMENT SYSTEM</h2>
+                    <p class="service-description">
+                       <p> Developed a student course registration system using Java Spring Boot,
+                        HTML/CSS, and MySQL.
+                       Implemented features for course selection, enroll
+                      ment, and scheduling. </p>
+                      <p>Demonstrated proficiency in full-stack development
+                       and database management.</p>
+                        
+                        &nbsp;&nbsp;&nbsp;
+                        <p>
+                         • FRAMEWORK-JavaSpringboot
+                         </p>
+                         &nbsp;
+                         <p>
+                         • TOOL-VScode,mySQLworkbench
+                        </p>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+
+
+<!------Contact------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                
+                <h1 class="subtittle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> garlapatiabhi2240@example.com</p>
+                <p><i class="fa-solid fa-phone"></i> 9676852240</p>
+                
+                <p>You can download my resume by clicking download</p>
+                <a href="images/my-cv.pdf" class="btn btn2">Download</a>
+            </div>
+            <div class="contact-right">
+            
+            
+        </div>
+        </div>
+    </div>
+    
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $(".learn-more").click(function(e) {
+            e.preventDefault();
+            var $service = $(this).closest('.service');
+            $service.toggleClass("open");
+        });
+    });
+</script>
+
+
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname)
+        {
+            for(tablink of tablinks)
+            {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents)
+            {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
+</body>
+</html>
