@@ -81,11 +81,10 @@ nav ul li a:hover::after{
     width: 35%;
     border-radius: 15px;
 }
-.about-col-1 img{
-    height: 700px;
-    width: 450px;
+.about-col-1 img {
+    width: 100%;
+    height: auto; /* Ensure aspect ratio is maintained */
     border-radius: 15px;
-    
 }
 .about-col-2{
     flex-basis: 60%;
